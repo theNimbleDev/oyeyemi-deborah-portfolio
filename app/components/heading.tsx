@@ -1,9 +1,12 @@
+import { inknut_Antiqua } from "@/app/utils/font";
+import { inter } from "@/app/utils/font";
+
 export const HeadingOne = ({ text, type }: { text: string; type: string }) => {
   return (
     <h1
-      className={`${
+      className={`${inknut_Antiqua.className} ${
         type === "secondary" ? "text-white" : "text-customPink"
-      } lg:text-[50px] font-semibold`}
+      } text-[20px] sm:text-[24px] md:text-[34px] lg:text-[46px] font-semibold text-center leading-tight`}
     >
       {text}
     </h1>
@@ -11,17 +14,11 @@ export const HeadingOne = ({ text, type }: { text: string; type: string }) => {
 };
 
 export const SubHeading = ({ text }: { text: string }) => {
-  return <p className="text-white text-lg mt-2">{text}</p>;
+  return (
+    <p
+      className={`${inter.className} text-white text-[12px] sm:text-[14px] md:text-[14px] lg:text-[16px] font-bold mt-2 text-center`}
+    >
+      {text}
+    </p>
+  );
 };
-
-// export const HeadingOne = ({ text, type }: { text: string; type: string }) => {
-//   return (
-//     <h1
-//       className={`${
-//         type === "secondary" ? "text-white" : "text-customPink"
-//       } lg:text-[50px] font-semibold`}
-//     >
-//       {text}
-//     </h1>
-//   );
-// };

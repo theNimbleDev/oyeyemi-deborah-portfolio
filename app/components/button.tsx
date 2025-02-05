@@ -18,11 +18,11 @@ const Button = ({
       href={link}
       className={`${
         type === "primary"
-          ? "bg-customPink hover:bg-customPink/80 hover:text-white text-white"
-          : "bg-black text-customPink"
+          ? "bg-customPink hover:bg-customPink/50 hover:text-white text-white text-center"
+          : "bg-black text-customPink border-2 text-center border-customPink hover:border-customPink/50 hover:text-white"
       } ${
         form ? "w-full" : ""
-      } border-customPink rounded-lg font-normal duration-200 transition-all p-1 md:p-2 lg:p-2`}
+      } border-customPink rounded-lg lg:text-[16px] font-bold duration-200 transition-all p-1 md:p-1.5 lg:px-4`}
     >
       {text}
     </a>
