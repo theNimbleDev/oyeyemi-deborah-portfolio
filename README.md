@@ -47,7 +47,7 @@ git push origin feature/name-of-what-you-are-working-on # Example
 ```
 
 **6. Create a Pull Request:**
-Go to the Cleanaid-app repository on GitHub. You should see a prompt to create a Pull Request for your newly pushed branch. Click on it.
+Go to the oyeyemi-deborah-portfolio repository on GitHub. You should see a prompt to create a Pull Request for your newly pushed branch. Click on it.
 
 **7. Fill out the Pull Request template:**
 Carefully fill out the PR template with all the required information. This includes:
