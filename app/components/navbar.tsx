@@ -13,7 +13,9 @@ function Navbar() {
     <nav className="bg-background text-white">
       <div className="flex justify-between items-center py-4 md:py-6 lg:py-8 ">
         <div className="text-white font-semibold lg:text-[24px]">
-          <span className="text-customPink">Deborah</span> Oyeyemi
+          <Link href="/" className=" transition-colors">
+            <span className="text-customPink">Deborah</span> Oyeyemi
+          </Link>
         </div>
 
         {/* Hamburger Menu Button */}
