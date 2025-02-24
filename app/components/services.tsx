@@ -9,7 +9,7 @@ const Services = ({
 }) => {
   return (
     <div className="flex flex-col justify-left items-center bg-white">
-      <img src={image} />
+      <img className="fit-content" src={image} />
       <h2>{title}</h2>
       <p>{content}</p>
     </div>

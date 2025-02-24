@@ -108,7 +108,7 @@ function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         } lg:hidden`}
       >
-        <ul className="flex flex-col items-center justify-center h-full gap-8 text-lg">
+        <ul className="flex flex-col items-center justify-start mt-20 h-full gap-6 text-lg">
           <li>
             <Link
               href="/"

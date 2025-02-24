@@ -1,4 +1,3 @@
-import Navbar from "@/app/components/navbar";
 import Button from "@/app/components/button";
 import Services from "@/app/components/services";
 
@@ -22,12 +21,22 @@ const Service = [
 
 export default function About() {
   return (
-    <section className="bg-background text-foreground h-screen px-4 md:px-6 lg:px-20">
-      <header>
-        <Navbar />
-      </header>
+    <section className="bg-background text-foreground h-screen">
+      <div>
+        <p className="text-white">
+          Deborah Olamide Oyeyemi is a highly motivated Business Analyst,
+          bringing a robust background in sales and marketing. She leverages her
+          comprehensive analytical skills to drive business success by
+          optimizing sales strategies and enhancing customer experiences.
+          Through data-driven insights, Deborah amplifies company visibility and
+          fosters growth. This portfolio showcases her education,
+          certifications, technical skills, work experience, and examples of
+          analytical projects, all presented in a professional design that
+          highlights her expertise and achievements.
+        </p>
+      </div>
       <main>
-        <div className="flex flex-row align-middle justify-center gap-4">
+        <div className="flex flex-row align-middle justify-center gap-6">
           {Service.map((service, index) => (
             <Services
               key={index}
