@@ -7,7 +7,7 @@ export default function PageLayout({
 }) {
   return (
     <section>
-      <div className="bg-background text-foreground min-h-screen flex flex-col px-4 md:px-6 lg:px-20">
+      <div className="bg-background text-foreground min-h-screen flex flex-col px-6 md:px-6 lg:px-20">
         <header>
           <Navbar />
         </header>

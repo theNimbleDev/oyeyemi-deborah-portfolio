@@ -1,37 +1,41 @@
+import React from "react";
 import Button from "@/app/components/button";
 import Services from "@/app/components/services";
 import { HeadingTwo } from "@/app/components/heading";
 
-const Service = [
-  {
-    image: "/images/business.svg",
-    title: "Business Analysis",
-    content: "Transform data into actionable insights for your business.",
-  },
-  {
-    image: "/images/sales.svg",
-    title: "Sales Strategy Optimization",
-    content: "Elevate your sales strategies to maximize revenue.",
-  },
-  {
-    image: "/images/customer.svg",
-    title: "Customer Experience Enhancement",
-    content: "Create exceptional customer journeys that drive loyalty.",
-  },
-];
-
 export default function About() {
+  const Service = [
+    {
+      image: "/images/business.svg",
+      title: "Business Analysis",
+      content: "Transform data into actionable insights for your business.",
+      link: "/about/business-analysis",
+    },
+    {
+      image: "/images/sales.svg",
+      title: "Sales Strategy Optimization",
+      content: "Elevate your sales strategies to maximize revenue.",
+      link: "/about/sales-strategy",
+    },
+    {
+      image: "/images/customer.svg",
+      title: "Customer Experience Enhancement",
+      content: "Create exceptional customer journeys that drive loyalty.",
+      link: "/about/customer-experience",
+    },
+  ];
+
   return (
     <section className="text-white min-h-screen">
       {/* Hero Section */}
-      <div className="mt-12 pb-12">
-        <h3 className="text-lg uppercase mb-2 tracking-wide">
+      <div className="mt-4 pb-8">
+        <p className="text-sm font-normal uppercase mb-2 tracking-wide">
           DRIVEN BUSINESS ANALYST
-        </h3>
+        </p>
         <HeadingTwo text="Maximizing success through insights" type="primary" />
 
         <div className="mb-8">
-          <p className="text-white mb-8 font-bold">
+          <p className="text-white mb-8 font-normal">
             Deborah Olamide Oyeyemi is a highly motivated Business Analyst,
             bringing a robust background in sales and marketing. She leverages
             her comprehensive analytical skills to drive business success by
@@ -49,22 +53,29 @@ export default function About() {
       {/* Services Section */}
       <div className="pb-16">
         <div className="mb-8">
-          <h3 className="text-lg uppercase tracking-wide">DRIVEN INSIGHT</h3>
+          <h3 className="text-xs font-normal uppercase tracking-wide">
+            DRIVEN INSIGHT
+          </h3>
           <HeadingTwo
             text="Transforming business strategies with analytics"
             type="primary"
           />
         </div>
 
-        <div className="text-black text-start grid grid-cols-3 gap-6">
+        {/* Using Tailwind's responsive classes instead of JS state */}
+        <div className="text-black text-start flex flex-col md:tracking-tight md:font-light md:grid md:grid-cols-3 gap-4 md:gap-6">
           {Service.map((service, index) => (
-            <Services
+            <div
               key={index}
-              image={service.image}
-              title={service.title}
-              content={service.content}
-              button="Learn More"
-            />
+              className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg group"
+            >
+              <Services
+                image={service.image}
+                title={service.title}
+                content={service.content}
+                link={service.link}
+              />
+            </div>
           ))}
         </div>
       </div>

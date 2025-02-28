@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -47,14 +49,19 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex flex-row gap-6 text-base md:gap-8 lg:gap-10 lg:text-[12px] font-bold">
           <li>
-            <Link href="/" className="hover:text-customPink transition-colors">
+            <Link
+              href="/"
+              className="hover:text-customPink active:text-customPink transition-colors"
+            >
               Home
             </Link>
           </li>
           <li>
             <Link
               href="/about"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/about" ? "text-customPink" : "text-white"
+              }`}
             >
               About
             </Link>
@@ -62,7 +69,9 @@ function Navbar() {
           <li>
             <Link
               href="/skills"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/skills" ? "text-customPink" : "text-white"
+              }`}
             >
               Skills
             </Link>
@@ -70,7 +79,9 @@ function Navbar() {
           <li>
             <Link
               href="/experience"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/experience" ? "text-customPink" : "text-white"
+              }`}
             >
               Work Experience
             </Link>
@@ -78,7 +89,9 @@ function Navbar() {
           <li>
             <Link
               href="/certification"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/certification" ? "text-customPink" : "text-white"
+              }`}
             >
               Certification
             </Link>
@@ -86,7 +99,9 @@ function Navbar() {
           <li>
             <Link
               href="/projects"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/projects" ? "text-customPink" : "text-white"
+              }`}
             >
               Projects
             </Link>
@@ -94,7 +109,9 @@ function Navbar() {
           <li>
             <Link
               href="/contact"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/contact" ? "text-customPink" : "text-white"
+              }`}
             >
               Contact Me
             </Link>
@@ -112,7 +129,9 @@ function Navbar() {
           <li>
             <Link
               href="/"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Home
@@ -121,7 +140,9 @@ function Navbar() {
           <li>
             <Link
               href="/about"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/about" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               About
@@ -130,7 +151,9 @@ function Navbar() {
           <li>
             <Link
               href="/skills"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/skills" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Skills
@@ -139,7 +162,9 @@ function Navbar() {
           <li>
             <Link
               href="/experience"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/experience" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Work Experience
@@ -148,7 +173,9 @@ function Navbar() {
           <li>
             <Link
               href="/certification"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/certification" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Certification
@@ -157,7 +184,9 @@ function Navbar() {
           <li>
             <Link
               href="/projects"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/projects" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Projects
@@ -166,7 +195,9 @@ function Navbar() {
           <li>
             <Link
               href="/contact"
-              className="hover:text-customPink transition-colors"
+              className={`hover:text-customPink transition-colors ${
+                pathname === "/contact" ? "text-customPink" : "text-white"
+              }`}
               onClick={toggleMenu}
             >
               Contact Me

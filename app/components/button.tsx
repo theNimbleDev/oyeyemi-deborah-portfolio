@@ -1,17 +1,15 @@
-// text
-// link
-// type - primary / secondary
-
 const Button = ({
   text,
   link,
   type,
   form,
+  className,
 }: {
   text: string;
   link: string;
   type: string;
   form?: boolean;
+  className?: string;
 }) => {
   return (
     <a
@@ -22,7 +20,9 @@ const Button = ({
           : "bg-black text-customPink border-2 text-center border-customPink hover:border-customPink/50 hover:text-white"
       } ${
         form ? "w-full" : ""
-      } border-customPink rounded-lg lg:text-[16px] font-bold duration-200 transition-all p-1 md:p-1.5 lg:px-4`}
+      } border-customPink rounded-lg lg:text-[16px] font-bold duration-200 transition-all p-1 md:p-1.5 lg:px-4 ${
+        className || ""
+      }`}
     >
       {text}
     </a>
