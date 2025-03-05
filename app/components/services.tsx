@@ -20,7 +20,7 @@ const Services = ({ image, title, content, link = "#" }: ServiceProps) => {
       </Link>
       <div className="px-2 pt-4">
         <BoldText text={title} />
-        <p className="font-bold text-start text-[13px] ml-2">{content}</p>
+        <p className="font-medium text-start text-[13px] ml-2">{content}</p>
       </div>
     </div>
   );

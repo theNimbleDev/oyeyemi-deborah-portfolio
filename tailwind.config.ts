@@ -18,7 +18,7 @@ export default {
       colors: {
         background: "#000000",
         foreground: "var(--foreground)",
-        customPink: "#ff7070",
+        customPink: "#FF7070",
       },
     },
   },

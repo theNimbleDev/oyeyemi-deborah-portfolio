@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-background text-white">
+    <nav className="bg-background text-white sticky top-0 z-50">
       <div className="flex justify-between items-center py-4 md:py-6 lg:py-8 ">
         <div className="text-white font-semibold lg:text-[24px]">
           <Link href="/" className=" transition-colors">

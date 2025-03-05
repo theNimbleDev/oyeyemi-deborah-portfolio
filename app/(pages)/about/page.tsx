@@ -62,7 +62,6 @@ export default function About() {
           />
         </div>
 
-        {/* Using Tailwind's responsive classes instead of JS state */}
         <div className="text-black text-start flex flex-col md:tracking-tight md:font-light md:grid md:grid-cols-3 gap-4 md:gap-6">
           {Service.map((service, index) => (
             <div
