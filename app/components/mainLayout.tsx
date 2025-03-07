@@ -1,5 +1,6 @@
 import Navbar from "@/app/components/navbar";
 import { Footer } from "@/app/components/footer";
+
 export default function MainLayout({
   children,
 }: {
@@ -7,11 +8,13 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <div className="bg-background text-foreground min-h-screen flex flex-col px-6 md:px-6 lg:px-20">
-        <header className="sticky top-0 z-50">
+      <div className="bg-background text-foreground min-h-screen flex flex-col mx-auto">
+        <header className=" sticky top-0 z-50">
           <Navbar />
         </header>
-        <main className="flex-1 container mx-auto md:py-2">{children}</main>
+        <main className="px-4 md:px-0 md:max-w-[1128px] container mx-auto">
+          {children}
+        </main>
       </div>
       <Footer />
     </>

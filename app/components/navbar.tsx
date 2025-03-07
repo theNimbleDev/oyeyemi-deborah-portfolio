@@ -12,8 +12,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-background text-white sticky top-0 z-50">
-      <div className="flex justify-between items-center py-4 md:py-6 lg:py-8 ">
+    <nav className="bg-background text-white container sticky top-0 z-50 px-4 md:px-0 md:max-w-[1128px] mx-auto">
+      <div className="flex justify-between items-center py-4 md:py-6">
         <div className="text-white font-semibold lg:text-[24px]">
           <Link href="/" className=" transition-colors">
             <span className="text-customPink">Deborah</span> Oyeyemi
@@ -47,7 +47,7 @@ function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex flex-row gap-6 text-base md:gap-8 lg:gap-10 lg:text-[12px] font-bold">
+        <ul className="hidden lg:flex flex-row gap-6 text-base md:gap-8 lg:gap-10 md:text-[12px] font-bold">
           <li>
             <Link
               href="/"

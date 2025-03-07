@@ -20,7 +20,7 @@ const Button = ({
           : "bg-black text-customPink border-2 text-center border-customPink hover:border-customPink/50 hover:text-white"
       } ${
         form ? "w-full" : ""
-      } border-customPink rounded-lg lg:text-[16px] font-bold duration-200 transition-all p-2 md:p-2.5 lg:px-4 ${
+      } border-customPink rounded-lg lg:text-[16px] font-bold duration-200 transition-all p-2 md:py-2.5 md:px-4 ${
         className || ""
       }`}
     >

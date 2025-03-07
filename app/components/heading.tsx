@@ -18,7 +18,7 @@ export const HeadingTwo = ({ text, type }: { text: string; type: string }) => {
     <h1
       className={`${inter.className} ${
         type === "secondary" ? "text-white" : "text-customPink"
-      } text-[22px] md:text-[34px] font-semibold mb-2 text-start leading-tight`}
+      } text-[22px] md:text-[34px] font-semibold mb-4 text-start leading-tight`}
     >
       {text}
     </h1>

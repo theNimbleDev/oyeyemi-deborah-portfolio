@@ -35,7 +35,7 @@ export default function About() {
         <HeadingTwo text="Maximizing success through insights" type="primary" />
 
         <div className="mb-8">
-          <p className="text-white mb-8 font-normal">
+          <p className="text-white mb-8 font-normal text-base text-justify">
             Deborah Olamide Oyeyemi is a highly motivated Business Analyst,
             bringing a robust background in sales and marketing. She leverages
             her comprehensive analytical skills to drive business success by
@@ -52,7 +52,7 @@ export default function About() {
 
       {/* Services Section */}
       <div className="pb-16">
-        <div className="mb-8">
+        <div className="mb-6">
           <h3 className="text-xs font-normal uppercase tracking-wide">
             DRIVEN INSIGHT
           </h3>
