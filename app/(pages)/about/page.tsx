@@ -53,13 +53,12 @@ export default function About() {
       {/* Services Section */}
       <div className="pb-16">
         <div className="mb-6">
-          <h3 className="text-xs font-normal uppercase tracking-wide">
+          <h3 className="text-sm leading-[100%] mb-[10px] font-normal uppercase tracking-wide">
             DRIVEN INSIGHT
           </h3>
-          <HeadingTwo
-            text="Transforming business strategies with analytics"
-            type="primary"
-          />
+          <h2 className="text-4xl font-bold text-customPink mb-4">
+            Transforming business strategies with analytics
+          </h2>
         </div>
 
         <div className="text-black text-start flex flex-col md:tracking-tight md:font-light md:grid md:grid-cols-3 gap-4 md:gap-6">
