@@ -21,12 +21,40 @@ export const HeadingOne = ({
   );
 };
 
-export const HeadingTwo = ({ text, type }: { text: string; type: string }) => {
+export const HeadingTwo = ({
+  text,
+  type,
+  className,
+}: {
+  text: string;
+  type: string;
+  className?: string;
+}) => {
   return (
     <h1
       className={`${inter.className} ${
         type === "secondary" ? "text-white" : "text-customPink"
-      } text-[22px] md:text-[48px] font-semibold mb-4 text-start leading-tight`}
+      } text-[24px] md:text-[48px] font-semibold text-start leading-tight ${className}`}
+    >
+      {text}
+    </h1>
+  );
+};
+
+export const Heading30 = ({
+  text,
+  type,
+  hide,
+}: {
+  text: string;
+  type: string;
+  hide?: string;
+}) => {
+  return (
+    <h1
+      className={`${inter.className} ${
+        type === "secondary" ? "text-white" : "text-customPink"
+      } text-[22px] md:text-[30px] font-semibold text-start leading-tight pb-2 ${hide}`}
     >
       {text}
     </h1>
