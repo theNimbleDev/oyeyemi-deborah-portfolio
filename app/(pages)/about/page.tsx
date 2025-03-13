@@ -32,7 +32,11 @@ export default function About() {
         <p className="text-sm font-normal uppercase mb-2 tracking-wide">
           DRIVEN BUSINESS ANALYST
         </p>
-        <HeadingTwo text="Maximizing success through insights" type="primary" />
+        <HeadingTwo
+          text="Maximizing success through insights"
+          type="primary"
+          className="mb-4"
+        />
 
         <div className="mb-8">
           <p className="text-white mb-8 font-normal text-base text-justify">

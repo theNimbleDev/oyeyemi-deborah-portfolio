@@ -5,7 +5,7 @@ import { HeadingThree } from "@/app/components/heading";
 export default function Skills() {
   return (
     <section className="bg-black text-white min-h-screen mt-8 mb-12">
-      <HeadingTwo text="Skills" type="primary" />
+      <HeadingTwo text="Skills" type="primary" className="mb-4" />
 
       <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Data Analysis Tools */}

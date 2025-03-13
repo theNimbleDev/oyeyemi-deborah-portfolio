@@ -1,19 +1,22 @@
 const Button = ({
   text,
-  link,
-  type,
-  form,
-  className,
+  link = "#",
+  type = "secondary",
+  form = false,
+  className = "",
+  downloadFile,
 }: {
   text: string;
-  link: string;
-  type: string;
+  link?: string;
+  type?: string;
   form?: boolean;
   className?: string;
+  downloadFile?: string;
 }) => {
   return (
     <a
-      href={link}
+      href={downloadFile || link}
+      download={downloadFile ? true : undefined}
       className={`${
         type === "primary"
           ? "bg-customPink hover:bg-customPink/50 hover:border-transparent hover:text-white text-white text-center border-2"
