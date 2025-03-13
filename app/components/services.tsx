@@ -1,16 +1,16 @@
 import Link from "next/link";
 
 interface ServiceProps {
+  id: string,
   image: string;
   title: string;
   content: string;
-  link?: string; // Optional link property
 }
 
-const Services = ({ image, title, content, link = "#" }: ServiceProps) => {
+const Services = ({ id, image, title, content, }: ServiceProps) => {
   return (
     <div className="flex flex-col justify-left bg-white pb-4">
-      <Link href={link}>
+      <Link href={`/about/${id}`}>
         <img
           className="w-full cursor-pointer hover:opacity-90 transition-opacity"
           src={image}

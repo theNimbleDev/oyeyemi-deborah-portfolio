@@ -2,29 +2,9 @@ import React from "react";
 import Button from "@/app/components/button";
 import Services from "@/app/components/services";
 import { HeadingTwo } from "@/app/components/heading";
+import { Service } from "@/app/utils/mockData";
 
 export default function About() {
-  const Service = [
-    {
-      image: "/images/business.svg",
-      title: "Business Analysis",
-      content: "Transform data into actionable insights for your business.",
-      link: "/about/business-analysis",
-    },
-    {
-      image: "/images/sales.svg",
-      title: "Sales Strategy Optimization",
-      content: "Elevate your sales strategies to maximize revenue.",
-      link: "/about/sales-strategy",
-    },
-    {
-      image: "/images/customer.svg",
-      title: "Customer Experience Enhancement",
-      content: "Create exceptional customer journeys that drive loyalty.",
-      link: "/about/customer-experience",
-    },
-  ];
-
   return (
     <section className="text-white min-h-screen">
       {/* Hero Section */}
@@ -72,10 +52,11 @@ export default function About() {
               className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg group"
             >
               <Services
+                id={service.id}
                 image={service.image}
                 title={service.title}
                 content={service.content}
-                link={service.link}
+                // link={service.link}
               />
             </div>
           ))}
