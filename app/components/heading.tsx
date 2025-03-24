@@ -79,7 +79,7 @@ export const HeadingThree = ({
   );
 };
 
-export const SubHeading = ({ text }: { text: string }) => {
+export const SubHeading = ({ text }: { text: string | undefined }) => {
   return (
     <p
       className={`${inter.className} text-white text-[12px] sm:text-[14px] md:text-[14px] lg:text-[16px] font-bold mt-2 text-center`}
