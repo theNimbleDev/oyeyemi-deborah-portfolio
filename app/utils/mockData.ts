@@ -26,49 +26,65 @@ export const Service = [
   },
 ];
 
-export interface ProjectD {
-  idRoute: string;
-  title: string;
-  date: string;
-  summary: string;
-  image: string;
-  toolsUsed: string;
-  fullDescription?: string;
-  projectImages?: string[];
-}
-// export const Projects = [
-export const Projects: ProjectD[] = [
+export const Projects = [
   {
-    idRoute: "business-analysis-dashboard",
-    title: "Driving Business Success Through Analysis",
-    date: "Mar 2024 - Jun 2024",
-    summary:
-      "A comprehensive data analysis project utilizing Excel, SQL, and Power BI to generate actionable insights for strategic decision-making.",
-    image: "/public/images/Place-Holder-Image.jpg", // Replace with actual image path
-    toolsUsed: "Excel, SQL, Power BI",
-    fullDescription:
-      "Developed advanced data analysis dashboards that transformed raw data into strategic insights, enabling data-driven decision-making for key business stakeholders.",
-    projectImages: [
-      "/public/images/Place-Holder-Image.jpg",
-      "/public/images/Place-Holder-Image.jpg",
+    id: "business-analysis-project",
+    title: "Business Analyst",
+    mobileTitle: "Business Analyst",
+    dateRange: "Mar. 2024 - Jun. 2024",
+    tools: "mySQL, Excel, PowerBI, R, Python, NodeJs ",
+    backgroundImage: "/images/businessAnalyst.svg",
+    backgroundImages: [
+      "/images/Place-Holder-Image.jpg",
+      "/images/businessAnalyst.svg",
+      "/images/businessAnalyst.svg",
     ],
+    summary:
+      "As a skilled Business Analyst, I specialize in transforming complex data into actionable insights that drive business growth. By employing a variety of analytical techniques, I uncover trends and patterns that help optimize operations and enhance decision-making processes. My approach involves collaborating closely with stakeholders to identify key performance indicators and establish metrics that align with strategic goals. Through rigorous analysis and reporting, I empower organizations to make informed decisions, improve efficiency, and ultimately increase profitability. Lets unlock the potential of your data together and pave the way for your business's success.",
   },
   {
-    idRoute: "product-marketing-strategy",
-    title: "Product Marketing and Growth Operations",
-    date: "Sep 2021 - Dec 2022",
-    summary:
-      "Implemented marketing strategies that resulted in significant sales and profit growth for ProconnectPAY.",
-
-    image: "/public/images/Place-Holder-Image.jpg",
-    toolsUsed: 
-      "Marketing Analytics, Sales Training, Social Media Marketing",
-    fullDescription:
-      "Led a transformative marketing approach that increased company profits by 99% through targeted sales training and innovative marketing campaigns.",
-    projectImages: [
-      "/public/images/Place-Holder-Image.jpg",
-      "/public/images/Place-Holder-Image.jpg",
+    id: "product-marketing-campaign",
+    title: "Head of Product Marketing and Gro...",
+    mobileTitle: "Head of Product Marketing and Growth",
+    dateRange: "Sep. 2023 - Dec. 2023",
+    tools: "mySQL, Excel, PowerBI",
+    backgroundImage: "/images/headOfProduct.svg",
+    backgroundImages: [
+      "/images/Place-Holder-Image.jpg",
+      "/images/headOfProduct.svg",
+      "/images/headOfProduct.svg",
     ],
+    summary:
+      "As a skilled Business Analyst, I specialize in transforming complex data into actionable insights that drive business growth. By employing a variety of analytical techniques, I uncover trends and patterns that help optimize operations and enhance decision-making processes. My approach involves collaborating closely with stakeholders to identify key performance indicators and establish metrics that align with strategic goals. Through rigorous analysis and reporting, I empower organizations to make informed decisions, improve efficiency, and ultimately increase profitability. Lets unlock the potential of your data together and pave the way for your business's success.",
   },
-  // Add more projects as needed
+  {
+    id: "sales-growth-initiative",
+    title: "Sales & Marketing Specialist - Rem...",
+    mobileTitle: "Sales & Marketing Specialist - Remote",
+    dateRange: "Jul. 2023 - Sep. 2023",
+    tools: "mySQL, Excel, PowerBI",
+    backgroundImage: "/images/sales&Marketing.svg",
+    backgroundImages: [
+      "/images/Place-Holder-Image.jpg",
+      "/images/sales&Marketing.svg",
+      "/images/sales&Marketing.svg",
+    ],
+    summary:
+      "As a skilled Business Analyst, I specialize in transforming complex data into actionable insights that drive business growth. By employing a variety of analytical techniques, I uncover trends and patterns that help optimize operations and enhance decision-making processes. My approach involves collaborating closely with stakeholders to identify key performance indicators and establish metrics that align with strategic goals. Through rigorous analysis and reporting, I empower organizations to make informed decisions, improve efficiency, and ultimately increase profitability. Lets unlock the potential of your data together and pave the way for your business's success.",
+  },
+  {
+    id: "marketing-analytics",
+    title: "Sales & Marketing Specialist - Rem...",
+    mobileTitle: "Sales & Marketing Specialist - Remote",
+    dateRange: "Jan. 2024 - Mar. 2024",
+    tools: "mySQL, Excel, PowerBI",
+    backgroundImage: "/images/businessAnalyst.svg",
+    backgroundImages: [
+      "/images/Place-Holder-Image.jpg",
+      "/images/businessAnalyst.svg",
+      "/images/businessAnalyst.svg",
+    ],
+    summary:
+      "As a skilled Business Analyst, I specialize in transforming complex data into actionable insights that drive business growth. By employing a variety of analytical techniques, I uncover trends and patterns that help optimize operations and enhance decision-making processes. My approach involves collaborating closely with stakeholders to identify key performance indicators and establish metrics that align with strategic goals. Through rigorous analysis and reporting, I empower organizations to make informed decisions, improve efficiency, and ultimately increase profitability. Lets unlock the potential of your data together and pave the way for your business's success.",
+  },
 ];
