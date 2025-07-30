@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 248 250 252;
+  --foreground: 15 23 42;
+  --muted-foreground: 100 116 139;
+  --card: 255 255 255; /* Pure white cards for light mode */
+  --border: 226 232 240;
+  --ring: 15 23 42;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: 0 0 0;
+  --foreground: 248 250 252;
+  --muted-foreground: 148 163 184;
+  --card: 0 0 0; /* Slightly lighter than background for dark mode */
+  --border: 51 65 85;
+  --ring: 226 232 240;
+}
+
+* {
+  border-color: rgb(var(--border));
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
   font-family: Arial, Helvetica, sans-serif;
 }

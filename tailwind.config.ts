@@ -1,26 +1,23 @@
-import type { Config } from "tailwindcss";
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ['class'],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
     extend: {
       colors: {
-        background: "#000000",
-        foreground: "var(--foreground)",
-        customPink: "#FF7070",
+        background: 'rgb(var(--background))',
+        foreground: 'rgb(var(--foreground))',
+        'muted-foreground': 'rgb(var(--muted-foreground))',
+        card: 'rgb(var(--card))',
+        border: 'rgb(var(--border))',
+        ring: 'rgb(var(--ring))',
+        customPink: '#FF7070',
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
