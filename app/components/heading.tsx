@@ -1,5 +1,5 @@
-import { inknut_Antiqua } from "@/app/utils/font";
-import { inter } from "@/app/utils/font";
+import { inknut_Antiqua } from '@/app/utils/font';
+import { inter } from '@/app/utils/font';
 
 export const HeadingOne = ({
   text,
@@ -13,7 +13,7 @@ export const HeadingOne = ({
   return (
     <h1
       className={`${inknut_Antiqua.className} ${
-        type === "secondary" ? "text-white" : "text-customPink"
+        type === 'secondary' ? 'text-white' : 'text-customPink'
       } text-[24px] md:text-[50px] font-semibold text-center leading-tight ${hide}`}
     >
       {text}
@@ -33,7 +33,7 @@ export const HeadingTwo = ({
   return (
     <h1
       className={`${inter.className} ${
-        type === "secondary" ? "text-white" : "text-customPink"
+        type === 'secondary' ? 'text-white' : 'text-customPink'
       } text-[24px] md:text-[48px] font-semibold text-start leading-tight ${className}`}
     >
       {text}
@@ -53,7 +53,7 @@ export const Heading30 = ({
   return (
     <h1
       className={`${inter.className} ${
-        type === "secondary" ? "text-white" : "text-customPink"
+        type === 'secondary' ? 'text-white' : 'text-customPink'
       } text-[22px] md:text-[30px] font-semibold text-start leading-tight pb-2 ${hide}`}
     >
       {text}
@@ -71,7 +71,7 @@ export const HeadingThree = ({
   return (
     <h1
       className={`${inter.className} ${
-        type === "secondary" ? "text-white" : "text-customPink"
+        type === 'secondary' ? 'text-white' : 'text-customPink'
       } text-[18px] md:text-[22px] font-semibold text-start leading-tight pb-2`}
     >
       {text}
@@ -82,7 +82,7 @@ export const HeadingThree = ({
 export const SubHeading = ({ text }: { text: string | undefined }) => {
   return (
     <p
-      className={`${inter.className} text-white text-[12px] sm:text-[14px] md:text-[14px] lg:text-[16px] font-bold mt-2 text-center`}
+      className={`${inter.className} text-[12px] sm:text-[14px] md:text-[14px] lg:text-[16px] font-bold mt-2 text-center`}
     >
       {text}
     </p>

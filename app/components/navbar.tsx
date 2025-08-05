@@ -23,7 +23,9 @@ function Navbar() {
 
         <div className='flex items-center gap-4'>
           {/* Theme Toggle */}
-          <ThemeToggle />
+          <div className='md:hidden'>
+            <ThemeToggle />
+          </div>
 
           {/* Hamburger Menu Button */}
           <button
@@ -127,6 +129,11 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+
+        {/* Theme Toggle */}
+        <div className='hidden md:block'>
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Mobile Menu */}

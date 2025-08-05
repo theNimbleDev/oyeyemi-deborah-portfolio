@@ -6,18 +6,23 @@ import { HeadingOne, SubHeading } from '@/app/components/heading';
 import Image from 'next/image';
 import Link from 'next/link';
 import Homenav from '@/app/components/homenav';
+import { ThemeToggle } from './components/theme-toggle';
 
 export default function Home() {
   return (
     <section className='bg-background text-foreground h-screen overflow-hidden'>
-      <div className='flex flex-row items-center justify-center md:justify-end gap-6 p-4 md:p-6'>
-        {/* <Button text="Download CV" link="/cv" type="secondary" /> */}
-        <Button
-          text='Download CV'
-          downloadFile='/doc/deborah-oyeyemi-resume.pdf'
-          type='secondary'
-        />
-        <Button text='Contact Me' link='/contact' type='primary' />
+      <div className='flex flex-row items-center justify-between md:justify-between gap-4 p-4 md:p-6'>
+        {/* Theme Toggle */}
+        <ThemeToggle />
+        <div className='flex flex-row gap-4'>
+          {/* <Button text="Download CV" link="/cv" type="secondary" /> */}
+          <Button
+            text='Download CV'
+            downloadFile='/doc/deborah-oyeyemi-resume.pdf'
+            type='secondary'
+          />
+          <Button text='Contact Me' link='/contact' type='primary' />
+        </div>
       </div>
       <main className='flex flex-col justify-center h-[85vh] items-center p-8 md:p-10 lg:p-6'>
         <div className='flex flex-col items-center justify-center gap-8 sm:gap-8 md:gap-8 lg:gap-8'>

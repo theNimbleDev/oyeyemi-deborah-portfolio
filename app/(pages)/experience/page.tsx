@@ -6,7 +6,7 @@ export default function Experience() {
     <div className='min-h-screen bg-background text-foreground mt-8 mb-12'>
       <HeadingTwo text='Work Experience' type='primary' className='mb-4' />
 
-      <div className='border border-customPink/80 bg-card p-6 mb-6 rounded-lg'>
+      <div className='border border-customPink/80 p-6 mb-6 rounded-lg'>
         {experienceData.map((experience, index) => (
           <div key={index} className='mb-[30px]'>
             <div className='flex flex-col md:flex-row justify-between mb-2'>
