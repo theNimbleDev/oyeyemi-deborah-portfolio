@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <div className='max-w-6xl mx-auto'>
         {/* Header */}
         <div className='mb-8'>
-          <p className='text-base text-muted-foreground font-bold mt-2 mb-1'>
+          <p className='text-base text-foreground font-bold mt-2 mb-1'>
             Harnessing data for strategic growth
           </p>
           <HeadingTwo text='Driving Business Success Through' type='primary' />

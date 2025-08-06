@@ -9,7 +9,7 @@ export default function About() {
     <section className='text-foreground min-h-screen'>
       {/* Hero Section */}
       <div className='mt-4 pb-8'>
-        <p className='text-sm font-normal uppercase mb-2 tracking-wide text-muted-foreground'>
+        <p className='text-sm font-normal uppercase mb-2 tracking-wide text-foreground'>
           DRIVEN BUSINESS ANALYST
         </p>
         <HeadingTwo
@@ -37,10 +37,10 @@ export default function About() {
       {/* Services Section */}
       <div className='pb-16'>
         <div className='mb-6'>
-          <h3 className='text-sm leading-[100%] mb-[10px] font-normal uppercase tracking-wide text-muted-foreground'>
+          <h3 className='text-sm leading-[100%] mb-[10px] font-normal uppercase tracking-wide text-foreground'>
             DRIVEN INSIGHT
           </h3>
-          <h2 className='text-4xl font-bold text-customPink mb-4'>
+          <h2 className='text-2xl md:text-4xl font-bold text-customPink mb-4'>
             Transforming business strategies with analytics
           </h2>
         </div>

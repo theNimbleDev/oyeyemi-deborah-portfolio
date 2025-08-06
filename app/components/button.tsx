@@ -1,9 +1,9 @@
 const Button = ({
   text,
-  link = "#",
-  type = "secondary",
+  link = '#',
+  type = 'secondary',
   form = false,
-  className = "",
+  className = '',
   downloadFile,
 }: {
   text: string;
@@ -18,13 +18,13 @@ const Button = ({
       href={downloadFile || link}
       download={downloadFile ? true : undefined}
       className={`${
-        type === "primary"
-          ? "bg-customPink hover:bg-customPink/50 hover:border-transparent hover:text-white text-white text-center border-2"
-          : "bg-black text-customPink border-2 text-center border-customPink hover:border-customPink/50 hover:text-white"
+        type === 'primary'
+          ? 'bg-customPink hover:bg-customPink/80 hover:border-customPink/80 text-white text-center border-2 border-customPink'
+          : 'bg-background text-customPink border text-center border-customPink hover:bg-customPink hover:text-white'
       } ${
-        form ? "w-full" : ""
-      } border-customPink rounded-lg text-[12px] md:text-[16px] font-bold duration-200 transition-all p-2 md:py-2.5 md:px-4 ${
-        className || ""
+        form ? 'w-full' : ''
+      } rounded-lg text-[12px] md:text-[16px] font-bold duration-200 transition-all p-2 md:py-2.5 md:px-4 ${
+        className || ''
       }`}
     >
       {text}

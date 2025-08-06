@@ -24,17 +24,17 @@ const ProjectCard = ({
   backgroundImages,
 }: ProjectCardProps) => {
   return (
-    <div className='flex flex-col justify-left bg-card text-foreground mb-4'>
+    <div className='flex flex-col justify-left text-foreground mb-4'>
       <Link href={`/projects/${id}`}>
         <Image
           alt='project-image'
           src={backgroundImage}
-          width={541}
+          width={561}
           height={337}
         />
       </Link>
       <div className='pt-2 pb-4'>
-        <p className='text-sm md:text-base font-normal md:font-bold mt-2 mb-1 text-muted-foreground'>
+        <p className='text-sm md:text-base font-normal md:font-bold mt-2 mb-1 text-foreground'>
           {dateRange}
         </p>
         <Heading30 text={title} type='primary' hide='hidden md:block' />
@@ -44,7 +44,7 @@ const ProjectCard = ({
           <span className='text-lg font-bold text-foreground'>
             Tools used:{' '}
           </span>
-          <span className='text-base md:text-lg font-normal text-muted-foreground'>
+          <span className='text-base md:text-lg font-normal text-foreground'>
             {tools}
           </span>
         </div>
