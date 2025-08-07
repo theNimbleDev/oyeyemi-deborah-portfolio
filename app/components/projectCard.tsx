@@ -21,7 +21,6 @@ const ProjectCard = ({
   tools,
   mobileTitle,
   backgroundImage,
-  backgroundImages,
 }: ProjectCardProps) => {
   return (
     <div className='flex flex-col justify-left text-foreground mb-4'>
