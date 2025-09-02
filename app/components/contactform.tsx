@@ -30,7 +30,7 @@ export default function ContactForm() {
       console.log('Email sent successfully:', result.text);
       alert('Message sent successfully!');
       setFormData({ fullName: '', email: '', message: '' });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Failed to send email:', error);
       alert('Failed to send message. Check console for details.');
     }

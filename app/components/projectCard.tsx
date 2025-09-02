@@ -11,7 +11,7 @@ interface ProjectCardProps {
   dateRange: string;
   tools: string;
   backgroundImage: string;
-  backgroundImages?: string[];
+  // backgroundImages?: string[];
 }
 
 const ProjectCard = ({
@@ -21,8 +21,8 @@ const ProjectCard = ({
   tools,
   mobileTitle,
   backgroundImage,
-  backgroundImages,
-}: ProjectCardProps) => {
+}: // backgroundImages,
+ProjectCardProps) => {
   return (
     <div className='flex flex-col justify-left text-foreground mb-4'>
       <Link href={`/projects/${id}`}>
