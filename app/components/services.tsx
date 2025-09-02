@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface ServiceProps {
@@ -11,7 +12,7 @@ const Services = ({ id, image, title, content }: ServiceProps) => {
   return (
     <div className='flex flex-col justify-left bg-background text-foreground pb-4'>
       <Link href={`/about/${id}`}>
-        <img
+        <Image
           className='w-full cursor-pointer hover:opacity-90 transition-opacity'
           src={image}
           alt={title}
