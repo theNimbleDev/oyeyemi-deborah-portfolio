@@ -10,12 +10,9 @@ import Link from 'next/link';
 
 const AboutDetail = () => {
   const router = useParams();
-  const { id } = router; // Get the `id` from the URL
+  const { id } = router;
   console.log('id', router);
-
-  // Find the project with the matching `id`
   const serviceDetails = Service.find((service) => service.id == id);
-
   console.log('serviceDetails', serviceDetails);
 
   return (
@@ -31,12 +28,15 @@ const AboutDetail = () => {
 
       <div className='pt-2 md:pt-6 flex flex-col md:flex-row'>
         <div className='md:w-1/2 mt-10'>
-          <Image
-            src={serviceDetails?.image ?? ''}
-            width={498}
-            height={403}
-            alt='logo'
-          />
+          {serviceDetails?.image && (
+            <Image
+              src={serviceDetails.image}
+              width={498}
+              height={403}
+              fill
+              alt={serviceDetails.title}
+            />
+          )}
         </div>
 
         <div className='pt-2 md:w-1/2 md:py-8 flex flex-col text-foreground items-start'>
