@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -8,9 +9,30 @@ export default function ContactForm() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    const templateParams = {
+      from_name: formData.fullName,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+      );
+
+      console.log('Email sent successfully:', result.text);
+      alert('Message sent successfully!');
+      setFormData({ fullName: '', email: '', message: '' });
+    } catch (error: unknown) {
+      console.error('Failed to send email:', error);
+      alert('Failed to send message. Check console for details.');
+    }
   };
 
   const handleChange = (
