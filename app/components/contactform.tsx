@@ -6,7 +6,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    message: '',
+    themessage: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,7 +25,7 @@ export default function ContactForm() {
     setShowToast({ show: true, message, type });
     setTimeout(() => {
       setShowToast({ show: false, message: '', type: 'success' });
-    }, 4000);
+    }, 6000);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -35,13 +35,15 @@ export default function ContactForm() {
     const templateParams = {
       from_name: formData.fullName,
       from_email: formData.email,
-      message: formData.message,
+      from_message: formData.themessage,
     };
+    // 👇 Add this log right after building templateParams
+    console.log('Params being sent:', templateParams);
 
     try {
       // Show success message immediately
       showNotification('Message sent successfully!', 'success');
-      setFormData({ fullName: '', email: '', message: '' });
+      setFormData({ fullName: '', email: '', themessage: '' });
 
       // Send email in background
       const result = await emailjs.send(
@@ -196,8 +198,8 @@ export default function ContactForm() {
             </label>
             <textarea
               id='message'
-              name='message'
-              value={formData.message}
+              name='themessage'
+              value={formData.themessage}
               onChange={handleChange}
               rows={4}
               className='w-full px-4 py-2 bg-transparent border border-border rounded-md focus:outline-none focus:border-customPink text-black dark:text-foreground resize-none'
