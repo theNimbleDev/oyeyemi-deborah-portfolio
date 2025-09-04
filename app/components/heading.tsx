@@ -34,7 +34,7 @@ export const HeadingTwo = ({
     <h1
       className={`${inter.className} ${
         type === 'secondary' ? 'text-white' : 'text-customPink'
-      } text-[24px] md:text-[48px] font-semibold text-start leading-tight ${className}`}
+      } text-[24px] md:text-[32px] lg:text-[48px] font-semibold text-start leading-tight ${className}`}
     >
       {text}
     </h1>
@@ -54,7 +54,7 @@ export const Heading30 = ({
     <h1
       className={`${inter.className} ${
         type === 'secondary' ? 'text-white' : 'text-customPink'
-      } text-[22px] md:text-[30px] font-semibold text-start leading-tight pb-2 ${hide}`}
+      } text-[22px] md:text-[24px] lg:text-[30px] font-semibold text-start leading-tight pb-2 ${hide}`}
     >
       {text}
     </h1>
