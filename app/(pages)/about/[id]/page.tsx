@@ -33,7 +33,6 @@ const AboutDetail = () => {
               src={serviceDetails.image}
               width={498}
               height={403}
-              fill
               alt={serviceDetails.title}
             />
           )}
