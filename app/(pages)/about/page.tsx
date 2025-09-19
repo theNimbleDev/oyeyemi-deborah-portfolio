@@ -40,7 +40,7 @@ export default function About() {
           <h3 className='text-sm leading-[100%] mb-[10px] font-normal uppercase tracking-wide text-foreground'>
             DRIVEN INSIGHT
           </h3>
-          <h2 className='text-2xl md:text-4xl font-bold text-customPink mb-4'>
+          <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-customPink mb-4'>
             Transforming business strategies with analytics
           </h2>
         </div>

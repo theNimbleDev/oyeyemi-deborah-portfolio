@@ -20,7 +20,8 @@ const ProjectCard = ({
   dateRange,
   tools,
   mobileTitle,
-  backgroundImage
+  backgroundImage,
+}: ProjectCardProps) => {
   return (
     <div className='flex flex-col justify-left text-foreground mb-4'>
       <Link href={`/projects/${id}`}>

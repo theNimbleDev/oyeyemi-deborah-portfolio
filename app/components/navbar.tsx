@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className='bg-background text-foreground container sticky top-0 z-50 px-4 md:px-0 md:max-w-[1128px] mx-auto'>
       <div className='flex justify-between items-center py-4 md:py-6'>
-        <div className='text-foreground font-semibold lg:text-[24px]'>
+        <div className='text-foreground font-semibold md:text-[20px] lg:text-[24px]'>
           <Link href='/' className='transition-colors'>
             <span className='text-customPink'>Deborah</span> Oyeyemi
           </Link>
@@ -23,7 +23,7 @@ function Navbar() {
 
         <div className='flex items-center gap-4'>
           {/* Theme Toggle */}
-          <div className='md:hidden'>
+          <div className='lg:hidden'>
             <ThemeToggle />
           </div>
 
@@ -131,7 +131,7 @@ function Navbar() {
         </ul>
 
         {/* Theme Toggle */}
-        <div className='hidden md:block'>
+        <div className='hidden lg:block'>
           <ThemeToggle />
         </div>
       </div>
@@ -142,7 +142,7 @@ function Navbar() {
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } lg:hidden`}
       >
-        <ul className='flex flex-col items-center justify-start mt-20 h-full gap-6 text-lg'>
+        <ul className='flex flex-col items-center justify-start mt-20 h-full gap-4 text-base md:text-lg'>
           <li>
             <Link
               href='/'
