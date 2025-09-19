@@ -15,7 +15,6 @@ export default function Home() {
         {/* Theme Toggle */}
         <ThemeToggle />
         <div className='flex flex-row gap-4'>
-          {/* <Button text="Download CV" link="/cv" type="secondary" /> */}
           <Button
             text='Download CV'
             downloadFile='/doc/deborah-oyeyemi-resume.pdf'
